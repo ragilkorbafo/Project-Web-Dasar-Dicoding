@@ -4,9 +4,9 @@ handlers:
 - url: /styles
   static_dir: styles
   
-- url: /img/(.*\.(gif|png|jpg))
-  static_files: img/\1
-  upload: img/(.*\.(gif|png|jpg))
+- url: /img/(.*\.png)
+  static_files: img/
+  upload: img/(.*\.png)
   
 - url: /.*
   script: index.html
